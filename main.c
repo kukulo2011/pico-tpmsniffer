@@ -134,7 +134,8 @@ void core1_entry() {
 
 
 int main() {
-    set_sys_clock_khz(270000, true); // 158us
+    // set_sys_clock_khz(270000, true); // 158us - original overclock for PICO
+    set_sys_clock_khz(225000, true); // RPI PICO W max. overclock
     stdio_init_all();
     sleep_ms(5000);
 
